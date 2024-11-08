@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="RapidEats ofrece un servicio innovador de entrega de alimentos saludables a domicilio, inspirando un estilo de vida equilibrado con comidas deliciosas y convenientes.">
+    <title>RapidEats - Alimentación saludable a domicilio</title>
+    <style>
+        /* Estilos CSS */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+        header {
+            background-color: #0044cc;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        header img {
+            display: block;
+            margin: 0 auto;
+            width: 200px;
+        }
+        nav {
+            background-color: #003366;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #0044cc;
+            color: white;
+        }
+        .container {
+            display: none;
+            padding: 20px;
+            overflow: hidden;
+        }
+        #inicio:target, #nosotros:target, #productos:target, #contacto:target {
+            display: block;
+        }
+        .recipe {
+            float: left;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            width: 45%;
+            box-sizing: border-box;
+        }
+        .recipe img {
+            width: 100%;
+            height: 250px; /* Tamaño uniforme para ambas imágenes */
+            object-fit: cover; /* Ajusta la imagen dentro del contenedor sin deformarla */
+            margin-bottom: 10px;
+        }
+        /* Estilos del formulario */
+        .contact-form {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border: 1px solid #ddd;
+            max-width: 500px;
+            margin: 20px auto;
+        }
+        .contact-form label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form textarea {
+            font-family: Arial, sans-serif; /* Fuente uniforme para todos los campos */
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .contact-form textarea {
+            resize: vertical;
+            height: 100px;
+        }
+        .contact-form button {
+            background-color: #0044cc;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .contact-form button:hover {
+            background-color: #003366;
+        }
+        @media (max-width: 768px) {
+            .recipe {
+                width: 100%;
+                margin-right: 0;
+            }
+            nav a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.jpg" alt="RapidEats Logo">
+        <h1>RapidEats</h1>
+        <p>Alimentación saludable a domicilio</p>
+    </header>
+
+    <nav>
+        <a href="#inicio">INICIO</a>
+        <a href="#nosotros">NOSOTROS</a>
+        <a href="#productos">PRODUCTOS O SERVICIOS</a>
+        <a href="#contacto">CONTÁCTENOS</a>
+    </nav>
+
+    <div class="container" id="inicio">
+        <h2>Bienvenido a RapidEats</h2>
+        <h3>¿Qué ofrecemos?</h3>
+        <p>Somos un innovador servicio de entrega de alimentos saludables a domicilio. En RapidEats, nuestra misión es proporcionar convenientemente comidas saludables y deliciosas para inspirar y facilitar un estilo de vida equilibrado. ¡Descubre cómo podemos ayudarte a comer mejor sin sacrificar la conveniencia!</p>
+    </div>
+
+    <div class="container" id="nosotros">
+        <h2>Nosotros</h2>
+        <p>Hola! Soy Juan Jose Ulloa Lopez, fundador de RapidEats, un innovador servicio de entrega de alimentos saludables a domicilio. Estoy emocionado de compartir contigo mi visión y pasión por ayudar a las personas a llevar vidas más saludables y convenientes a través de nuestra empresa.</p>
+        <h3>MISIÓN:</h3>
+        <p>En RapidEats, nuestra misión es revolucionar la forma en que las personas se alimentan al proporcionar convenientemente comidas saludables y deliciosas a través de nuestro servicio de entrega a domicilio. Nos comprometemos a inspirar y facilitar un estilo de vida equilibrado, brindando a nuestros clientes opciones nutritivas y sabrosas que se adapten a sus necesidades individuales y les ayuden a alcanzar sus objetivos de bienestar.</p>
+        <h3>VISIÓN:</h3>
+        <p>Nuestra visión en RapidEats es crear un mundo donde comer saludable sea fácil, accesible y delicioso para todos. Nos esforzamos por ser líderes en la industria de alimentos saludables, utilizando tecnología de vanguardia y colaborando con expertos en salud y nutrición para ofrecer constantemente innovación, calidad y valor a nuestros clientes. Queremos ser reconocidos como el socio de confianza en el viaje hacia un estilo de vida más saludable y feliz.</p>
+    </div>
+
+    <div class="container" id="productos">
+        <h2>Productos y Servicios</h2>
+        <div class="recipe">
+            <h3>Ensalada de Quinoa y Vegetales</h3>
+            <img src="Ensalada.jpg" alt="Ensalada de quinoa con vegetales frescos y aderezo saludable" loading="lazy">
+            <p>Una deliciosa ensalada cargada de nutrientes, perfecta para una comida rápida y saludable. La quinoa es una excelente fuente de proteínas y los vegetales aportan fibra y vitaminas esenciales.</p>
+        </div>
+        <div class="recipe">
+            <h3>Wraps de Pollo y Aguacate</h3>
+            <img src="wrap.jpeg" alt="Wraps rellenos de pollo a la parrilla y aguacate con verduras" loading="lazy">
+            <p>Estos wraps son una opción deliciosa y saludable para el almuerzo o la cena. El pollo magro y el aguacate proporcionan proteínas y grasas saludables, mientras que las verduras frescas añaden sabor y nutrientes.</p>
+        </div>
+    </div>
+
+    <div class="container" id="contacto">
+        <div class="contact-form">
+            <form action="#" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="asunto">Asunto:</label>
+                <input type="text" id="asunto" name="asunto" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+
+                <button type="submit">Enviar Datos</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
+
